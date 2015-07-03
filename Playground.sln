@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground", "Playground\Playground.csproj", "{836263C6-8C0B-4C8E-8B8F-EDC78CAAA6F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ngAnimate-master", "ngAnimate-master\ngAnimate-master.csproj", "{770C76A3-93BF-48AC-96D9-2AD3CDAA7CD1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{836263C6-8C0B-4C8E-8B8F-EDC78CAAA6F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{836263C6-8C0B-4C8E-8B8F-EDC78CAAA6F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{836263C6-8C0B-4C8E-8B8F-EDC78CAAA6F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{770C76A3-93BF-48AC-96D9-2AD3CDAA7CD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{770C76A3-93BF-48AC-96D9-2AD3CDAA7CD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{770C76A3-93BF-48AC-96D9-2AD3CDAA7CD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{770C76A3-93BF-48AC-96D9-2AD3CDAA7CD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
