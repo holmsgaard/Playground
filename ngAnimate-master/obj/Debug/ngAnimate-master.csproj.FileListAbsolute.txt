@@ -3,3 +3,12 @@ C:\Git\Playground\ngAnimate-master\bin\ngAnimate-master.pdb
 C:\Git\Playground\ngAnimate-master\obj\Debug\ngAnimate-master.csprojResolveAssemblyReference.cache
 C:\Git\Playground\ngAnimate-master\obj\Debug\ngAnimate-master.dll
 C:\Git\Playground\ngAnimate-master\obj\Debug\ngAnimate-master.pdb
+C:\Git\Playground\ngAnimate-master\bin\Newtonsoft.Json.dll
+C:\Git\Playground\ngAnimate-master\bin\System.Net.Http.Formatting.dll
+C:\Git\Playground\ngAnimate-master\bin\System.Web.Cors.dll
+C:\Git\Playground\ngAnimate-master\bin\System.Web.Http.Cors.dll
+C:\Git\Playground\ngAnimate-master\bin\System.Web.Http.dll
+C:\Git\Playground\ngAnimate-master\bin\Newtonsoft.Json.xml
+C:\Git\Playground\ngAnimate-master\bin\System.Net.Http.Formatting.xml
+C:\Git\Playground\ngAnimate-master\bin\System.Web.Http.xml
+C:\Git\Playground\ngAnimate-master\bin\System.Web.Http.Cors.xml

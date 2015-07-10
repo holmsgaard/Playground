@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground", "Playground\Pl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ngAnimate-master", "ngAnimate-master\ngAnimate-master.csproj", "{770C76A3-93BF-48AC-96D9-2AD3CDAA7CD1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaygroundApp", "PlaygroundApp\PlaygroundApp.csproj", "{A6EC1B6B-1F75-4966-B6AF-6ECC63C1E7E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{770C76A3-93BF-48AC-96D9-2AD3CDAA7CD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{770C76A3-93BF-48AC-96D9-2AD3CDAA7CD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{770C76A3-93BF-48AC-96D9-2AD3CDAA7CD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6EC1B6B-1F75-4966-B6AF-6ECC63C1E7E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6EC1B6B-1F75-4966-B6AF-6ECC63C1E7E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6EC1B6B-1F75-4966-B6AF-6ECC63C1E7E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6EC1B6B-1F75-4966-B6AF-6ECC63C1E7E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
