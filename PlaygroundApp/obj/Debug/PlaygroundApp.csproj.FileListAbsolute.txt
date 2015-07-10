@@ -1,0 +1,5 @@
+C:\Git\Playground\PlaygroundApp\bin\PlaygroundApp.dll
+C:\Git\Playground\PlaygroundApp\bin\PlaygroundApp.pdb
+C:\Git\Playground\PlaygroundApp\obj\Debug\PlaygroundApp.csprojResolveAssemblyReference.cache
+C:\Git\Playground\PlaygroundApp\obj\Debug\PlaygroundApp.dll
+C:\Git\Playground\PlaygroundApp\obj\Debug\PlaygroundApp.pdb
