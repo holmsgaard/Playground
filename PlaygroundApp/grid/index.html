@@ -1,0 +1,88 @@
+﻿<!DOCTYPE HTML>
+<html lang="en-US" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid</title>
+
+    <link href="/css/app.css" rel="stylesheet">
+    <link href="css/grid.styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://i.icomoon.io/public/70c184c81e/DanskCater/style.css">
+</head>
+<body>
+    <header id="app-header">
+        <div class="app-header-logo">
+            Cater<b>Annoncer</b>
+        </div>
+        <nav>
+            <a href="#/filter/all">
+                Se alle
+            </a>
+            <a href="#/filter/icecream" class="filter-active">
+                Frysevarer
+            </a>
+            <a href="#/filter/icecream" class="filter-active">
+                Tilbud
+            </a>
+            <a href="#/filter/icecream">
+                GMP
+            </a>
+        </nav>
+    </header>
+    <div id="container" ng-controller="ProductsController">
+        <label>
+            Filter
+            <input type="text" ng-model="search" />
+        </label>
+        <label class="tags">
+            Tags:
+            <span ng-repeat="tag in tags track by $index" ng-click="toggleTag($index)" ng-class="tag.active ? 'tag-active' : ''" class="tag">{{tag.name}}</span>
+        </label>
+        
+        <ul id="myContent">
+            <li class="grid-item" ng-repeat="product in products | filter:search | selectedTags:tags">
+                <div class="card">
+                    <div class="card-image" ng-show="item.img">
+                        <img src="{{product.img}}" alt="{{product.name}}"/>
+                    </div>
+                    <div class="card-content" ng-show="product.description">
+                        {{product.description}}
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-footer-label card-footer-label-blue">
+                            {{product.name}}
+                        </span>
+                        <a href="#" class="card-footer-item">
+                            <span class="icon-local-grocery-store"></span>
+                        </a>
+                        <a href="#" class="card-footer-item">
+                            <span class="icon-heart-stroke"></span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+    <script src="/js/angular.min.js"></script>
+    <script src="/js/angular-utf8-base64.min.js"></script>
+    <!--<script src="/js/app.js"></script>-->
+    <script src="js/masonry.jquery.min.js"></script>
+    <script>
+        $(document).on('click', '.grid-item', function (event) {
+            event.preventDefault();
+            $(this).addClass('hidden');
+            $grid.masonry();
+        });
+
+        //var $grid = $('#myContent').masonry({
+        //    itemSelector: '.grid-item',
+        //    columnWidth: 250
+        //});
+
+
+    </script>
+    <script src="js/app.js"></script>
+</body>
+</html>

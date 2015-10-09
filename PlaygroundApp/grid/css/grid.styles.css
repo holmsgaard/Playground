@@ -1,0 +1,256 @@
+﻿body
+{
+    background-color: #ececec;
+    padding: 0;
+    margin: 0;
+    padding-left: 150px;
+}
+
+#app-toggle-menu
+{
+
+}
+
+#app-header
+{
+    background: #222;
+    color: #fff;
+    width: 150px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    left: 0;
+    bottom: 0;
+}
+
+    #app-header .app-header-logo
+    {
+        padding: 10px;
+    }
+
+    #app-header nav a
+    {
+        display: block;
+        color: #999;
+        padding: 10px;
+        text-decoration: none;
+        font-size: .8em;
+        border-bottom: 1px solid #444;
+    }
+
+        #app-header nav a:hover
+        {
+            color: #fff;
+        }
+
+    #app-header nav .filter-active
+    {
+        background: #c1c1c1;
+        color: #333;
+        border-color: #cfcfcf;
+    }
+/* Cards */
+.card
+{
+    margin: 10px;
+    background: #FFF;
+    border-radius: 3px;
+    font-size: .8em;
+}
+
+.card-image img
+{
+    max-width: 100%;
+    height: auto;
+    line-height: 0;
+    border-radius: 3px 3px 0 0;
+}
+
+.card-content
+{
+    padding: 10px;
+    color: #999;
+    line-height: 15px;
+    font-size: .9em;
+}
+
+.card-footer
+{
+    border-top: 1px solid #efefef;
+    overflow: hidden;
+}
+
+    .card-footer .card-footer-item
+    {
+        display: inline-block;
+        float: right;
+        padding: 10px;
+        text-decoration: none;
+        color: #999;
+    }
+
+        .card-footer .card-footer-item:hover
+        {
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        .card-footer .card-footer-item span
+        {
+            font-size: 1.5em;
+            font-weight: 100;
+        }
+
+    .card-footer .card-footer-label
+    {
+        padding: 5px;
+        margin: 10px;
+        border-radius: 2px;
+        background: #333;
+        color: #fff;
+        font-size: .7em;
+        text-transform: uppercase;
+        display: block;
+        float: left;
+    }
+        .card-footer .card-footer-label-green
+        {
+            background-color: lightseagreen;
+        }
+
+        .card-footer .card-footer-label-blue
+        {
+            background-color: darkblue;
+        }
+
+
+.grid-item
+{
+    width: 250px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-item-two-columns
+{
+    width: 500px;
+}
+
+.hidden
+{
+    display: none;
+}
+
+/*#container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #efefef;
+}
+ 
+#myContent {
+    -moz-column-count: 4;
+    -moz-column-gap: 0px;
+    -webkit-column-count: 4;
+    -webkit-column-gap: 0px;
+    column-count: 4;
+    column-gap: 0px;
+    width: 1200px;
+}
+ 
+#myContent li {
+    display: inline-block;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+
+@media only screen and (max-width : 1199px),
+only screen and (max-device-width : 1199px){
+    #myContent {
+        -moz-column-count: 5;
+        -moz-column-gap: 0px;
+        -webkit-column-count: 5;
+        -webkit-column-gap: 0px;
+        column-count: 5;
+        column-gap: 0px;
+        width: 1000px;
+    }
+     
+    #container {
+        width: 1000px;
+    }
+}
+ 
+ 
+@media only screen and (max-width : 999px),
+only screen and (max-device-width : 999px){
+    #myContent {
+        -moz-column-count: 4;
+        -moz-column-gap: 0px;
+        -webkit-column-count: 4;
+        -webkit-column-gap: 0px;
+        column-count: 4;
+        column-gap: 0px;
+        width: 800px;
+    }
+     
+    #container {
+        width: 800px;
+    }
+}
+ 
+@media only screen and (max-width : 799px),
+only screen and (max-device-width : 799px){
+    #myContent {
+        -moz-column-count: 3;
+        -moz-column-gap: 0px;
+        -webkit-column-count: 3;
+        -webkit-column-gap: 0px;
+        column-count: 34;
+        column-gap: 0px;
+        width: 600px;
+    }
+     
+    #container {
+        width: 600px;
+    }
+}
+ 
+@media only screen and (max-width : 599px),
+only screen and (max-device-width : 599px){
+    #myContent {
+        -moz-column-count: 2;
+        -moz-column-gap: 0px;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 0px;
+        column-count: 2;
+        column-gap: 0px;
+        width: 400px;
+    }
+     
+    #container {
+        width: 400px;
+    }
+}*/
+
+
+/* Tags */
+
+.tags
+{
+}
+
+    .tags .tag
+    {
+        display: inline-block;
+        padding: 5px;
+        font-size: .9em;
+        margin: 0 5px 5px 0;
+        border: 1px solid rgba(0,0,0,.1);
+    }
+
+    .tags .tag-active
+    {
+        background-color: limegreen;
+    }

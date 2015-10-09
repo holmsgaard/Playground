@@ -57,6 +57,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="filesize\css\styles.css" />
+    <Content Include="filesize\index.html" />
+    <Content Include="grid\css\grid.styles.css" />
+    <Content Include="grid\index.html" />
+    <Content Include="grid\js\app.js" />
+    <Content Include="grid\js\masonry.jquery.min.js" />
     <Content Include="index.html" />
     <Content Include="js\angular-utf8-base64.min.js" />
     <Content Include="Web.config" />
@@ -66,6 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\app.css" />
+    <Content Include="data\products.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -73,7 +80,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="filesize\js\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
