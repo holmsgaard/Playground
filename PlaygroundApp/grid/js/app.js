@@ -16,6 +16,8 @@ app.controller('ProductsController', ['$scope', '$http', 'ProductsService', func
         }
     ];
     
+    $scope.products = [];
+
     $scope.toggleTag = function (index) {
         var tag = $scope.tags[index];
         if (tag.active) {
@@ -27,74 +29,74 @@ app.controller('ProductsController', ['$scope', '$http', 'ProductsService', func
         console.log($scope.tags);
     }
 
-    $scope.products = [
-            {
-                "name": "Catershare",
-                "description": "Prøv catershare og oplev inspiration fra alle vores leverandører",
-                "img": "http://staging.abcatering.dk/media/2439/catershare_ikon.jpg",
-                "reference": "",
-                "isProduct": true,
-                "tags": [
-                    "frost",
-                    "offers"
-                ],
-                "tag": "offers"
-            },
-            {
-                "name": "Green Menu Planner",
-                "description": "Green Menu Planner - din vej til en sundere hverdag!",
-                "img": "http://staging.abcatering.dk/media/2547/gmp_oplev.jpg",
-                "reference": "",
-                "isProduct": true,
-                "tags": [
-                    "frost",
-                    "offers",
-                    "gmp"
-                ],
-                "tag": "gmp"
-            },
-            {
-                "name": "SPOT",
-                "description": null,
-                "img": "http://staging.abcatering.dk/media/2522/event_spot.jpg",
-                "reference": "",
-                "isProduct": true,
-                "tags": [
-                    "frost",
-                    "offers",
-                    "spot"
-                ],
-                "tag": "inspiration"
-            },
-            {
-                "name": "SPOT",
-                "description": "Philadelphia lancerer en helt ny ostesmag.",
-                "img": "http://staging.abcatering.dk/media/2542/spot_mondelez_bc_maj2015_1-1.jpg",
-                "reference": "",
-                "isProduct": true,
-                "tags": [
-                    "frost",
-                    "offers",
-                    "spot"
-                ]
-            },
-            {
-                "name": "Billede",
-                "description": null,
-                "img": "http://foodinfo.cater.dk/foodimages/2259.jpg",
-                "reference": "",
-                "isProduct": true,
-                "tags": [
-                    "frost",
-                    "offers",
-                    "spot"
-                ]
-            }
-    ];
+    //$scope.products = [
+    //        {
+    //            "name": "Catershare",
+    //            "description": "Prøv catershare og oplev inspiration fra alle vores leverandører",
+    //            "img": "http://staging.abcatering.dk/media/2439/catershare_ikon.jpg",
+    //            "reference": "",
+    //            "isProduct": true,
+    //            "tags": [
+    //                "frost",
+    //                "offers"
+    //            ],
+    //            "tag": "offers"
+    //        },
+    //        {
+    //            "name": "Green Menu Planner",
+    //            "description": "Green Menu Planner - din vej til en sundere hverdag!",
+    //            "img": "http://staging.abcatering.dk/media/2547/gmp_oplev.jpg",
+    //            "reference": "",
+    //            "isProduct": true,
+    //            "tags": [
+    //                "frost",
+    //                "offers",
+    //                "gmp"
+    //            ],
+    //            "tag": "gmp"
+    //        },
+    //        {
+    //            "name": "SPOT",
+    //            "description": null,
+    //            "img": "http://staging.abcatering.dk/media/2522/event_spot.jpg",
+    //            "reference": "",
+    //            "isProduct": true,
+    //            "tags": [
+    //                "frost",
+    //                "offers",
+    //                "spot"
+    //            ],
+    //            "tag": "inspiration"
+    //        },
+    //        {
+    //            "name": "SPOT",
+    //            "description": "Philadelphia lancerer en helt ny ostesmag.",
+    //            "img": "http://staging.abcatering.dk/media/2542/spot_mondelez_bc_maj2015_1-1.jpg",
+    //            "reference": "",
+    //            "isProduct": true,
+    //            "tags": [
+    //                "frost",
+    //                "offers",
+    //                "spot"
+    //            ]
+    //        },
+    //        {
+    //            "name": "Billede",
+    //            "description": null,
+    //            "img": "http://foodinfo.cater.dk/foodimages/2259.jpg",
+    //            "reference": "",
+    //            "isProduct": true,
+    //            "tags": [
+    //                "frost",
+    //                "offers",
+    //                "spot"
+    //            ]
+    //        }
+    //];
 
-    //ProductsService.getProducts().then(function (response) {
-    //    $scope.products = response.data.products;
-    //});
+    ProductsService.getProducts().then(function (response) {
+        $scope.products = response.data.products;
+    });
 
 }]).filter('selectedTags', function () {
     return function (products, tags) {
